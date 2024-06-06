@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: pop;
+    src: url(./Fonts/Poppins-Medium.ttf);
+}
+
+/* main start*/
+.main{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: pop;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+main ul{
+    display: flex;
+}
+
+main ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main ul li .icon{
+    font-size: 35px;
+    color: #ff4732;
+    margin: 0 60px;
+}
+
+main ul li .text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff4732;
+}
+
+/* Progress Div Css  */
+
+ul li .progress{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(68, 68, 68, 0.781);
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.progress::after{
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: rgba(68, 68, 68, 0.781);
+    right: 30px;
+}
+.one::after{
+    width: 0;
+    height: 0;
+}
+ul li .progress .uil{
+    display: none;
+}
+ul li .progress p{
+    font-size: 13px;
+}
+
+/* Active Css  */
+
+ul li .active{
+    background-color: #ff4732;
+    display: grid;
+    place-items: center;
+}
+li .active::after{
+    background-color: #ff4732;
+}
+ul li .active p{
+    display: none;
+}
+ul li .active .uil{
+    font-size: 20px;
+    display: flex;
+}
+
+/* Responsive Css  */
+
+@media (max-width: 768px) {
+    ul{
+        flex-direction: column;
+    }
+    ul li{
+        flex-direction: row;
+    }
+    ul li .progress{
+        margin: 0 30px;
+    }
+    .progress::after{
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .one::after{
+        height: 0;
+    }
+    ul li .icon{
+        margin: 15px 0;
+    }
+}
+/*main end*/
+
+
+/*table start*/
+.table-format {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fff6;
+    padding-bottom: 100px ;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    margin-top: 20px;
+
+}
+
+
+.table-format::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table-format::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table-format::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+table{
+    width: 100%;
+}
+
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #ccc ;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td img {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
+
+.status {
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.paymentPending {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.status.dispatch {
+    background-color: #ebc474;
+}
+
+.status.shipped {
+    background-color: #6fcaea;
+}
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    border: 1.4px solid transparent;
+    
+    text-align: center;
+    font-size: 1rem;
+    
+    margin-left: .5rem;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow{
+    border: 1.4px solid #6c00bd;
+}
+
+thead th:hover {
+    color: #6c00bd;
+}
+
+thead th.active span.icon-arrow{
+    background-color: #6c00bd;
+    color: #fff;
+}
+
+thead th.asc span.icon-arrow{
+    transform: rotate(180deg);
+}
+
+thead th.active,tbody td.active {
+    color: #6c00bd;
+}
+
+/*table end*/
+
+

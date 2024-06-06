@@ -1,0 +1,184 @@
+/*---Title---*/
+div#title h1 {
+    color: white;
+    text-align: center;
+    font-size: 20pt;
+  }
+  
+  
+  /*---Layout---*/
+  div#content {
+    width: 95%;
+    margin: 10px auto;
+  }
+  
+  div.productDiv {
+    background-color: white;
+    border: 2px solid var(--hoverColor);
+  }
+  
+  /*Phone Layout*/
+  @media only screen and (max-width: 800px){
+    div.productDiv div.imageDiv img {
+      width: 50%;
+      flex-wrap: nowrap;
+    }
+  }
+
+  div#header div a {
+    user-select: none;
+    box-sizing: content-box;
+    display: block;
+  }
+  div#header div a:hover {
+    outline: 1px solid var(--hoverColor);
+  }
+  div#header div a:active {
+    outline: 2px solid var(--activeColor);
+  }
+  
+  span#cartItems {
+    border-radius: 50%;
+    padding: 5px 8px;
+  }
+  
+  
+  
+  /*---Product---*/
+  div.productDiv div.productNum {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+  }
+  
+  div.productDiv div.imageDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  div.productDiv img {
+    flex: 1 1 auto;
+    width: 45%;
+    margin: 10px;
+  }
+  
+  div.productInfo div.productDesc {
+    display: flex;
+    text-align: center;
+  }
+  
+  div.productInfo div.productDesc span {
+    outline: 2px dashed var(--hoverColor);
+    flex: 1 1 auto;
+    padding: 5px;
+    margin: 0 10px;
+  }
+  
+  div.productInfo button {
+    background-color: transparent;
+    border: 2px solid var(--hoverColor);
+    float: right;
+    margin: 10px 10px 5px 10px;
+  }
+  div.productInfo button:hover {
+    background-color: var(--hoverColor);
+    cursor: pointer;
+  }
+  div.productInfo button:active {
+    background-color: var(--activeColor);
+  }
+  
+  /*Clearfix*/
+  div.productInfo div.addToCart::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  div.ProductClass {
+    border: 5px solid rgb(231, 132, 40);
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+}
+
+div.ProductClass div {
+    display: flex;
+}
+
+div.ProductClass div img {
+    margin: auto;
+}
+div#ProductList1{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+h2 {
+  background-color: rgb(247, 53, 63);
+  padding: 20px;
+  color:black;
+}
+
+div.ProductClass p.NewTag  {
+  color:rgb(0, 255, 0)
+}
+
+div.ProductClass p.LimitTag  {
+  color:rgb(255, 8, 0)
+}
+
+a.links {
+  background-color: blue;
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+}
+a.links:hover {
+  outline: 2px dashed var(--hoverColor);
+}
+a.links:active {
+  outline: 3px dashed var(--activeColor);
+}
+
+.parallax{
+
+  /* Height */
+  min-height: 150px;
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

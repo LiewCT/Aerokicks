@@ -1,0 +1,126 @@
+main {
+    background-color: rgb(244, 250, 255);
+    box-sizing: border-box;
+}
+
+.filter {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.category {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 2vw;
+    border-bottom: 2px solid transparent;
+}
+
+.category::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.category.active::after {
+    width: 100% !important;
+    left: 0 !important;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+
+.category:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.category:not(:hover)::after {
+    width: 0;
+    left: 50%;
+}
+
+.LatestNews p { 
+    width: 90%;
+    font-size: 3vw; 
+    padding: 30px 0; 
+    padding-left: 10%;
+}
+
+.LatestNews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.LatestNews > div {
+    width: 30%;
+    border: 1px solid black;
+    margin-bottom: 80px;
+    background-color: white;
+}
+
+.LatestNews > div:hover {
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+.LatestNews > div img{
+    min-height: 204.8px;
+    max-height: 400px;
+    width: 100%;
+}
+
+.newsDesc {
+    margin: 10px;
+    padding: 10px;
+}
+
+.newsDesc a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.newsDesc a:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.5S;
+}
+
+.newsDesc h3{
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 63.2px;
+}
+
+@media screen and (max-width: 768px) {
+    .LatestNews {
+        flex-direction: column;
+
+    }
+
+    .LatestNews div {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .category {
+        font-size: 1em;
+    }
+
+    .LatestNews p{
+        font-size: 1em;
+    }
+}

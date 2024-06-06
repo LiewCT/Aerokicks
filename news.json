@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "image":"news/news1.jpg",
+        "news":" COMING SOON: Cactus Plant Flea Market x Nike Air Force 1",
+        "category":"Shoes",
+        "link": "https://sneakernews.com/2024/04/06/cactus-plant-flea-market-nike-air-force-1-release-date/"
+    },
+    {
+        "id": 2,
+        "image":"news/news2.jpg",
+        "news":" The ASICS GEL-1130 Collides With An Iceberg On May 10th",
+        "category":"Shoes",
+        "link": "https://sneakernews.com/2024/05/06/asics-gel-1130-blue-white-1203a626-400/"
+    },
+    {
+        "id": 3,
+        "image":"news/news3.jpg",
+        "news":" Anthony Edwards Debuts The adidas AE1 Low",
+        "category":"Shoes",
+        "link": "https://sneakernews.com/2024/04/20/adidas-ae1-low-release-date/"
+    },
+    {
+        "id": 4,
+        "image":"news/news4.jpg",
+        "news":" Highlights of the Thomas-Uber Cup Finals",
+        "category":"Badminton",
+        "link": "https://www.thestar.com.my/sport/badminton/2024/05/07/highlights-of-the-thomas-uber-cup-finals"
+    },
+    {
+        "id": 5,
+        "image":"news/news5.jpg",
+        "news":" Loss to Aaron-Wooi Yik just the wake-up call Wang Chang needed",
+        "category":"Badminton",
+        "link": "https://www.thestar.com.my/sport/badminton/2024/05/07/loss-to-aaron-wooi-yik-just-the-wake-up-call-wang-chang-needed"
+    },
+    {
+        "id": 6,
+        "image":"news/news6.jpg",
+        "news":" Jun Hao’s battling qualities reminiscent of 1992 singles hero Kok Keong",
+        "category":"Badminton",
+        "link": "https://www.thestar.com.my/sport/badminton/2024/05/07/jun-haos-battling-qualities-reminiscent-of-1992-singles-hero-kok-keong"
+    },
+    {
+        "id": 7,
+        "image":"news/news7.jpg",
+        "news":" 'Bullies inspired me to run 1,000 marathons'",
+        "category":"Running",
+        "link": "https://www.bbc.com/news/articles/c4n1wrv1kreo"
+    },
+    {
+        "id": 8,
+        "image":"news/news8.jpg",
+        "news":" Injuries Will Keep Olympians From Games This Summer",
+        "category":"Running",
+        "link": "https://www.runnersworld.com/news/a60685357/olympic-track-trials-2024-withdrawals/"
+    },
+    {
+        "id": 9,
+        "image":"news/news9.jpg",
+        "category":"Running",
+        "news":" Kenya Announces Marathon Team for the Paris Olympics",
+        "link": "https://www.runnersworld.com/news/a60658857/kenya-marathon-team-2024-olympics/"
+    }
+]

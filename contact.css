@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f6e8; /* Yellow background */
+    color: #996ac2; /* Purple text */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #996ac2; /* Purple heading */
+}
+
+table {
+    margin: 20px auto;
+}
+
+table td {
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c7d31f; /* Purple button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7d5a8c; /* Darker purple on hover */
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+
+/*mission start*/
+.mission2{
+    margin-top: 80px;
+    color: black;
+}
+
+.mission2 h1{
+    margin-left: 50px;
+}
+
+.mission_list2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 50px;
+    gap: 50px;
+    height: 200px;
+}
+
+.thebox2{
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.thebox2:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.boxfront2,
+.boxback2{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.boxfront2 {
+    background: #d9e8ec;
+    opacity: .8;
+}
+
+.boxfront2 img {
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.boxfront2 h2 {
+    text-align: center;
+    margin: 45px 40px 50px 40px;
+    font-size: 21px;
+}
+
+.boxback2{
+    background-color: #d9e8ec;
+    opacity: .8;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 0 5px;
+}
+
+.boxback2 p{
+    text-align: center;
+    font-weight: bold;
+    size: 20px;
+}
+/* mission end */
